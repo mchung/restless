@@ -1,0 +1,8 @@
+<xml>
+    <action>move</action>
+    <data>
+       <target>@target_type@</target>
+       <item_id>@item_id@</item_id>
+       <destination_id>@dest_id@</destination_id>
+    </data>
+</xml>

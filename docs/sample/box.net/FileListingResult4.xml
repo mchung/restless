@@ -1,0 +1,49 @@
+<xml>
+  <status>listing_ok</status>
+  <folder id="0" name="MyBox" shared="0" shared_link="">
+    <folders>
+     <folder id="550185" name="Something else" shared="0" shared_link=""><tags></tags>
+      <folders>
+       <folder id="550186" name="Crazy boy" shared="0" shared_link=""><tags></tags>
+        <folders>
+         <folder id="606582" name="damn man" shared="0" shared_link=""><tags></tags>
+          <folders></folders>
+          <files></files>
+         </folder>
+         <folder id="550188" name="One more folder" shared="0" shared_link=""><tags></tags>
+          <folders>
+           <folder id="550189" name="yet another" shared="0" shared_link=""><tags></tags>
+            <folders>
+             <folder id="550191" name="now one more" shared="0" shared_link=""><tags></tags>
+              <folders>
+               <folder id="550192" name="yet another" shared="0" shared_link=""><tags></tags>
+                <folders></folders>
+                <files></files>
+               </folder>
+ 			  </folders>
+ 			  <files></files>
+ 			 </folder>
+            </folders>
+            <files></files>
+           </folder>
+          </folders>
+          <files>
+           <file id="6008827" file_name="project.xml" keyword="" shared="0" size="10667" created="1142484146" updated="1142484146" thumbnail="thumbs/24x24/default_file.gif" shared_link="">
+            <tags></tags>
+           </file>
+          </files>
+         </folder>
+        </folders>
+        <files>
+         <file id="6008811" file_name="build.properties.sample" keyword="" shared="0" size="1665" created="1142484118" updated="1142484118" thumbnail="thumbs/24x24/image_file.gif" shared_link=""><tags></tags></file>
+         <file id="6008819" file_name="README.txt" keyword="" shared="0" size="369" created="1142484128" updated="1142484128" thumbnail="thumbs/24x24/default_file.gif" shared_link=""><tags></tags></file>
+        </files>
+       </folder>
+<folder id="606580" name="max payne hurts me" shared="0" shared_link=""><tags><tag id="3330" /><tag id="3331" /><tag id="3332" /><tag id="3333" /><tag id="3334" /></tags><folders><folder id="606581" name="pretty cool io" shared="0" shared_link=""><tags></tags>
+<folders></folders><files></files>
+</folder></folders><files></files></folder>
+<folder id="606579" name="one more" shared="0" shared_link=""><tags></tags>
+<folders></folders><files></files></folder></folders><files></files></folder>
+
+<folder id="606578" name="yess.. another one" shared="0" shared_link=""><tags><tag id="3335" /></tags><folders></folders><files></files></folder></folders>
+<files><file id="5427744" file_name="pom.xml" keyword="" shared="0" size="26927" created="1141749788" updated="1141749788" thumbnail="thumbs/24x24/default_file.gif" shared_link=""><tags></tags></file></files></folder><pages>1</pages></xml>

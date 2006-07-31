@@ -1,0 +1,9 @@
+<xml>
+    <action>
+       account_tree
+    </action>
+    <folder_id>
+       @folder_id_here@
+    </folder_id>
+    <one_level>@one_level@</one_level>
+</xml>

@@ -1,0 +1,21 @@
+<xml>
+   <status>listing_ok</status>
+   <folder id="0" name="" shared="0">
+        <folders>
+       <folder id="4384" name="Incoming" shared="0">
+         <files>
+          <file id="68736" file_name="cows.jpg" keyword="" 
+          shared="0" size="232386" created="1129537520" updated="1129537520" 
+          thumbnail="fs/file1/small_thumb/3ece30594fa8b9da7a9452bfcd8d341c.gif"/>
+          <file id="68737" file_name="silver.doc" keyword="" 
+          shared="0" size="15805" created="1129537520" updated="1129537520" 
+          thumbnail="thumbs/24x24/application/doc_file.gif" />
+         </files>
+         <folders>
+         </folders>
+        </folder>
+      </folders>
+     <files></files>
+    </folder>
+  
+</xml> 

@@ -1,0 +1,11 @@
+<xml>
+    <action>
+       authorization
+    </action>
+    <login>
+       @login_here@
+    </login>
+    <password>
+       @password_here@
+    </password>
+</xml>

@@ -1,0 +1,18 @@
+Goal:
+To create a flexible and extendable framework for consuming (in a typed-way) an API for online platforms
+
+Box.net
+ - http://dev.box.net/api-documentation
+Del.icio.us
+ - http://del.icio.us/help/api/
+ GET, tags, mostly lists of data, HTTPS
+Eventful
+ - http://api.evdb.com/docs/venues/tags/search
+Flickr
+ - http://www.flickr.com/services/api/
+ GET, groups, tags, binary data, also SOAP
+Technorati
+ - http://developers.technorati.com/wiki/TechnoratiApi
+Upcoming
+ - http://upcoming.org/services/api/
+

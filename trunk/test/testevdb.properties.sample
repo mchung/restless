@@ -1,0 +1,7 @@
+# Enter your login and password and remove '.sample' from file name.
+# Only necessary if you want to run test scripts/cases
+
+
+login=example
+password=example
+appkey=Jfkjf4JkdjfkJKMC

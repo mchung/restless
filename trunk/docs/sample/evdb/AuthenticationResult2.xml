@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<error string="Authorization Required">
+  <nonce></nonce>
+  <description>'johndoe' is not a valid user or provided an incorrect password.</description>
+</error>

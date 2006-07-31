@@ -10,7 +10,7 @@ import java.net.URLConnection;
 import com.chungco.rest.boxnet.BoxService;
 import com.chungco.rest.boxnet.service.AuthorizationResult;
 import com.chungco.rest.boxnet.service.MockBoxConfig;
-import com.chungco.rest.boxnet.service.MockLoginPassword;
+import com.chungco.rest.boxnet.service.MockBoxnetLogin;
 
 /**
  * A very manual upload example. This is not a unit test
@@ -19,7 +19,7 @@ public class MultiPartFormOutputStreamTest {
 
     // TODO Enable uploads of really, really large files, i.e. > 1Gb
 
-    private final static MockLoginPassword provider = new MockLoginPassword();
+    private final static MockBoxnetLogin provider = new MockBoxnetLogin();
 
     private final static String            HOST     = new MockBoxConfig().getBoxNetHost();
 

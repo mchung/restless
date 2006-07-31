@@ -3,15 +3,15 @@ package com.chungco.rest.boxnet.service;
 
 import java.util.ResourceBundle;
 
-public class MockLoginPassword {
+public class MockBoxnetLogin {
 
     private final String username;
 
     private final String password;
 
-    public MockLoginPassword() {
+    public MockBoxnetLogin() {
 
-        final ResourceBundle rb = ResourceBundle.getBundle("login");
+        final ResourceBundle rb = ResourceBundle.getBundle("testbox");
 
         username = rb.getString("login");
 

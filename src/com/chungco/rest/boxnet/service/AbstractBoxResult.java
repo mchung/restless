@@ -1,3 +1,4 @@
+
 package com.chungco.rest.boxnet.service;
 
 import com.chungco.rest.AbstractRestResult;
@@ -11,8 +12,6 @@ public abstract class AbstractBoxResult extends AbstractRestResult {
 
     private String                mStatus;
 
-    private String                mXmlResponse;
-
     public AbstractBoxResult() {
 
         mStatus = "";
@@ -21,16 +20,6 @@ public abstract class AbstractBoxResult extends AbstractRestResult {
     public String getStatus() {
 
         return mStatus;
-    }
-
-    public String getXmlResponse() {
-
-        return mXmlResponse;
-    }
-
-    public void setXmlResponse(final String pXmlResponse) {
-
-        mXmlResponse = pXmlResponse;
     }
 
     public void setStatus(final String status) {

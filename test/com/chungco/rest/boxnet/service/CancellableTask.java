@@ -5,7 +5,6 @@ import java.io.File;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
-import java.util.concurrent.TimeUnit;
 
 import junit.framework.TestCase;
 
@@ -21,7 +20,7 @@ import com.chungco.rest.exception.RestCommandException;
 
 public class CancellableTask extends TestCase {
 
-    private final static MockLoginPassword provider = new MockLoginPassword();
+    private final static MockBoxnetLogin provider = new MockBoxnetLogin();
 
     public void testCancellableThread() {
 
@@ -56,13 +55,15 @@ public class CancellableTask extends TestCase {
         });
 
         try {
-            backgroundExec.awaitTermination(10, TimeUnit.SECONDS);
+            Thread.sleep(10000);
+            // backgroundExec.awaitTermination(10, TimeUnit.SECONDS);
             runningTask.cancel(true);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
 
         System.out.println("Cancelled");
+        // TODO Verify Thread got terminated/interrupted/cancelled properly.
 
     }
 

@@ -1,0 +1,15 @@
+<xml>
+  <status>listing_ok</status>
+  <folder id="0" name="MyBox" shared="0" shared_link="">
+    <files>
+      <file id="5427744" file_name="pom.xml" keyword="" shared="0" size="26927" created="1141749788" updated="1141749788" thumbnail="thumbs/24x24/default_file.gif" shared_link="">
+        <tags></tags>
+      </file>
+    </files>
+    <folders>
+      <folder id="550185" name="Something else" shared="0" shared_link="">
+        <tags>bob, sjf, jflkj, j4fj</tags>
+      </folder>
+    </folders>
+  </folder>
+</xml>

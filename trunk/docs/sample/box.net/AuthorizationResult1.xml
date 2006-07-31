@@ -1,0 +1,14 @@
+<xml>
+<status>
+logged
+</status>		<user>
+<sid>4080de01f8e3013942b22de36a07bb2b</sid>
+<login>changed@example.com</login>
+<email>changed@example.com</email>
+<access_id>12345</access_id>
+<user_id>12345</user_id>
+<space_amount>1073741824</space_amount>
+<free>1</free>
+<space_used>26927</space_used>
+</user>
+</xml>

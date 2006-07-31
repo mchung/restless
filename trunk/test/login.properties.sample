@@ -1,0 +1,11 @@
+# Enter your login and password and remove '.sample' from file name.
+# Only necessary if you want to run test scripts/cases
+# 
+# For example:
+# 
+# login=mchung@gmail.com
+# password=ilikeike
+# 
+
+login=<box.net login>
+password=<box.net passwd>

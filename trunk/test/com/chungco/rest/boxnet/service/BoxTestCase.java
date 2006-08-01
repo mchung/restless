@@ -1,4 +1,3 @@
-
 package com.chungco.rest.boxnet.service;
 
 import java.io.File;
@@ -19,17 +18,18 @@ import com.chungco.rest.boxnet.model.Target;
 import com.chungco.rest.exception.RestCommandException;
 
 /**
- * A test case.
+ * A test case. This test case, really isn't a test case. Please examine
+ * {@link BoxServiceTestCase} for a real test case
  * 
  * @author mchung
  */
 public class BoxTestCase extends TestCase {
 
-    private MockBoxnetLogin   provider       = new MockBoxnetLogin();
+    private MockBoxnetLogin     provider       = new MockBoxnetLogin();
 
     private final static String WD             = "sandbox";
 
-    private final static String testUploadFile = "UploadTestFile.html";
+    public final static String  testUploadFile = "UploadTestFile.html.test";
 
     // TODO Make this test case check file listings after each operation
     // is executed. Use FileListingService. Perform all "work" in a sandbox'd

@@ -29,14 +29,20 @@ public class SharingOpts {
 
     private String             mTypeId;
 
-    public SharingOpts() {
+    public SharingOpts(final Share pShareType) {
 
-        mShareType = Share.IGNORE;
+        mShareType = pShareType;
         mComments = "";
         mPassword = "";
         mEmail = "";
         mMesg = "";
         mTypeId = "";
+
+    }
+
+    public SharingOpts() {
+
+        this(Share.IGNORE);
 
     }
 

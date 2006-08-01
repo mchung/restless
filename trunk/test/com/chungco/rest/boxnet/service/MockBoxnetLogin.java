@@ -1,6 +1,6 @@
-
 package com.chungco.rest.boxnet.service;
 
+import java.util.MissingResourceException;
 import java.util.ResourceBundle;
 
 public class MockBoxnetLogin {
@@ -11,11 +11,15 @@ public class MockBoxnetLogin {
 
     public MockBoxnetLogin() {
 
-        final ResourceBundle rb = ResourceBundle.getBundle("testbox");
+        try {
+            final ResourceBundle rb = ResourceBundle.getBundle("testbox");
 
-        username = rb.getString("login");
+            username = rb.getString("login");
 
-        password = rb.getString("password");
+            password = rb.getString("password");
+        } catch (MissingResourceException mre) {
+            throw new IllegalArgumentException("Did you rename testbox.properties.sample to testbox.properties?");
+        }
 
     }
 

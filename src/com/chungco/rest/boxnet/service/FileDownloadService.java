@@ -9,8 +9,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.net.URLConnection;
 
-import org.apache.commons.io.IOUtils;
-
+import com.chungco.rest.RestUtils;
 import com.chungco.rest.boxnet.exception.BoxException;
 import com.chungco.rest.exception.MalformedXmlException;
 
@@ -62,8 +61,8 @@ public class FileDownloadService extends AbstractBoxService<FileDownloadResult> 
             r.setStatus(FileDownloadResult.SUCCESSFUL_DOWNLOAD);
             r.setXmlResponse(FileDownloadResult.toStatusXml(FileDownloadResult.SUCCESSFUL_DOWNLOAD, "File downloaded to " + fileOut.getAbsolutePath()));
         } finally {
-            IOUtils.closeQuietly(bis);
-            IOUtils.closeQuietly(bos);
+            RestUtils.closeQuietly(bis);
+            RestUtils.closeQuietly(bos);
         }
         return r;
 

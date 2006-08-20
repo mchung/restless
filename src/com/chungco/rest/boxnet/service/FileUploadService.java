@@ -6,8 +6,6 @@ import java.io.IOException;
 import java.net.URL;
 import java.net.URLConnection;
 
-import org.apache.commons.io.IOUtils;
-
 import com.chungco.core.Stack;
 import com.chungco.core.http.MultiPartFormOutputStream;
 import com.chungco.core.xml.IXmlSaxAdapter;
@@ -72,7 +70,7 @@ public class FileUploadService extends AbstractBoxService<FileUploadResult> {
         out.writeField(KEY_UPLOAD_FILES, uploadfiles);
         out.close();
 
-        final String xmlStr = IOUtils.toString(urlConn.getInputStream());
+        final String xmlStr = RestUtils.streamToString(urlConn.getInputStream());
         r = processXml(xmlStr);
         return r;
     }

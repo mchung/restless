@@ -4,8 +4,6 @@ import java.io.IOException;
 import java.net.URL;
 import java.net.URLConnection;
 
-import org.apache.commons.io.IOUtils;
-
 import com.chungco.rest.AbstractRestService;
 import com.chungco.rest.RestUtils;
 import com.chungco.rest.boxnet.BoxConstants;
@@ -105,8 +103,8 @@ public abstract class AbstractBoxService<R extends AbstractBoxResult> extends Ab
         final URLConnection conn = pUrl.openConnection();
         conn.setDoOutput(true);
 
-        IOUtils.write(xmlRequest, conn.getOutputStream());
-        final String xmlStr = IOUtils.toString(conn.getInputStream());
+        RestUtils.writeStringToStream(xmlRequest, conn.getOutputStream());
+        final String xmlStr = RestUtils.streamToString(conn.getInputStream());
 
         r = processXml(xmlStr);
         return r;

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project>
+
+	<property name="project.version" value="0.1" />
+
+	<property name="project.name" value="restless" />
+	<property name="verbose" value="true" />
+	<property name="debug" value="true" />
+
+	<!-- Some folders -->
+	<property name="src.dir" value="${basedir}/src" />
+	<property name="dist.dir" value="${basedir}/dist" />
+	<property name="lib.dir" value="${basedir}/lib" />
+
+	<path id="project.classpath">
+		<fileset dir="${lib.dir}" includes="*.jar" />
+	</path>
+
+</project>

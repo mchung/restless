@@ -2,21 +2,23 @@ package com.chungco.rest;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.OutputStream;
 import java.io.StringReader;
 import java.util.ArrayList;
 import java.util.List;
-
-import org.apache.commons.io.IOUtils;
 
 import javolution.xml.pull.XmlPullParser;
 import javolution.xml.pull.XmlPullParserException;
 import javolution.xml.pull.XmlPullParserImpl;
 
+import org.apache.commons.io.IOUtils;
+import org.apache.commons.lang.builder.ToStringBuilder;
+import org.apache.commons.lang.builder.ToStringStyle;
+
 import com.chungco.core.Stack;
 import com.chungco.core.xml.IXmlSaxParser;
 import com.chungco.core.xml.XmlAttr;
 import com.chungco.core.xml.XmlElement;
-import com.chungco.rest.RegexpTest;
 import com.chungco.rest.exception.MalformedXmlException;
 import com.chungco.rest.exception.RestRuntimeException;
 
@@ -105,7 +107,7 @@ public final class RestUtils {
         try {
             // byte[] buf = StreamUtil.readInputStream(is);
             // new String(buf);//, StreamUtil.UTF_8_CHARSET);
-            xml = IOUtils.toString(is);
+            xml = streamToString(is);
         } catch (IOException e) {
             xml = "";
             throw new RestRuntimeException(e);
@@ -113,6 +115,27 @@ public final class RestUtils {
         return xml;
     }
 
+    public final static String streamToString(final InputStream pIs) throws IOException {
+        return IOUtils.toString(pIs);
+    }
+    
+    public final static String toString(final Object pObj) {
+        return ToStringBuilder.reflectionToString(pObj, ToStringStyle.SIMPLE_STYLE);
+    }
+
+    public final static void writeStringToStream(final String pStr, final OutputStream pOs) throws IOException {
+        IOUtils.write(pStr, pOs);
+    }
+    
+    public final static void closeQuietly(final OutputStream pOs) {
+        IOUtils.closeQuietly(pOs);
+    }
+
+    public final static void closeQuietly(final InputStream pIs) {
+        IOUtils.closeQuietly(pIs);
+    }
+
+    
     public final static String en(final String pK) {
 
         return "@" + pK + "@";

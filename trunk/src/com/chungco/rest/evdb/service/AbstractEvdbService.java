@@ -5,9 +5,8 @@ import java.io.IOException;
 import java.net.URL;
 import java.net.URLConnection;
 
-import org.apache.commons.io.IOUtils;
-
 import com.chungco.rest.AbstractRestService;
+import com.chungco.rest.RestUtils;
 import com.chungco.rest.evdb.IEvdbConfig;
 import com.chungco.rest.evdb.exception.EvdbException;
 import com.chungco.rest.exception.MalformedXmlException;
@@ -81,7 +80,7 @@ public abstract class AbstractEvdbService<R extends AbstractEvdbResult> extends 
         R r;
         final URLConnection conn = pUrl.openConnection();
 
-        final String xmlStr = IOUtils.toString(conn.getInputStream());
+        final String xmlStr = RestUtils.streamToString(conn.getInputStream());
 
         r = processXml(xmlStr);
         return r;
